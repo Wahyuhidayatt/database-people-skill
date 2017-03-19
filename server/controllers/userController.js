@@ -3,7 +3,7 @@ const User = require('../models/user');
 
 let users = {}
 
-  users.getAlluser = (req, res, next) => {
+  users.getAllUser = (req, res, next) => {
     User.find({}).then((users) => {
       if(!users){
         req.send('user not found')

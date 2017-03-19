@@ -48,7 +48,7 @@ let skills = {}
     })
   }
 
-  skills.delete = deleteSkill = (req, res) => {
+  skills.delete = (req, res) => {
     user.findOne({
       username: req.params.username
     }).then((data) => {
